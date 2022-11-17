@@ -1,0 +1,324 @@
+:root{
+    --primaryColor : hsl(43, 68%, 64%);
+    --secondaryColor : hsl(347, 86%, 55%) ;
+}
+
+
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.subtitle{
+    
+}
+
+
+/* ************************************************************ */
+
+.navbarcontent {
+    max-width: 1250;
+    height: 70px;
+    margin: auto;
+    padding: 0px 30px;
+  }
+  
+  .navbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 25px 0;
+    transition: all 0.3s ease;
+    /* background: #1b1b1b; */
+  }
+  
+  .navbar.sticky {
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 7px 18px rgb(0, 0, 0, 0.4);
+    content: "";
+    /* background-color: rgba(10, 10, 10, 0.9); */
+    color: #fff;
+  }
+  
+  .navbar.sticky::after {
+    content: "";
+    opacity: 0.5;
+  }
+  
+  .navbar .navbarcontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .menu-list {
+    display: inline-flex;
+  }
+  
+  .navbar .logo a {
+    color: #fff;
+  }
+  
+
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: smaller;
+}
+.nav-link:hover,.nav-link:focus{
+    color: white;
+}
+
+
+
+/* ************************************************************ */
+/* Header Section */
+
+
+.carousel-item{
+    position: relative;
+}
+.headerTextContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.headerTextContainer button{
+    background-color: var(--primaryColor);
+    transition: .3s all;
+}
+.headerTextContainer button:hover{
+    background-color: white;
+    color: black !important;
+}
+
+
+
+
+.carousel-indicators button{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+}
+.carousel-control-prev-icon{
+    color: white;
+}
+
+
+
+
+
+
+/* ************************************************************ */
+/* Section 1 */
+
+.momentItem img{
+    width: 100%;
+}
+.momentSubtitle h2{
+    font-size: 45px;
+}
+
+
+
+
+/* ************************************************************ */
+/* Section 2 */
+.secondSection{
+    background-image: url('../images/h11-parallax-img-1.jpg');
+    background-size: 100% 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.input-group-text{
+    background-color: var(--primaryColor);
+}
+.input-group-text:hover{
+    background-color:rgb(226, 190, 101,0.8) ;
+}
+.bakersSubtitle h2{
+    font-size: 45px ;
+}
+
+
+
+
+
+/* ************************************************************ */
+/* Section 3 */
+
+.specialtiesSubtitle h2{
+    font-size: 45px ;
+}
+
+
+
+.progress-bar{
+    background-color: black ; 
+}
+.specialtiesItem .row:nth-child(1) .percentage{
+    margin-right: 30%;
+    
+}
+.specialtiesItem .row:nth-child(2) .percentage{
+    margin-right: 15%;
+}
+.specialtiesItem .row:nth-child(3) .percentage{
+    margin-right: 35%;
+}
+.specialtiesItem .row:nth-child(4) .percentage{
+    margin-right: 55%;
+}
+
+
+.progress{
+    height: 5px ;
+}
+
+
+/* ************************************************************ */
+/* Section 4 */
+.fourthSection{
+    background-image: url('../images/home-11-background-image-2-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section4Subtitle h2{
+    font-size: 45px ;
+}
+
+
+
+
+/* ************************************************************ */
+/* Section 5 */
+
+.section5Item img{
+    width: 100%;
+}
+
+
+
+
+/* ************************************************************ */
+/* Footer Section */
+.footerSection{
+    background-color: RGB(35, 35, 35);
+}
+
+.footerIcons ul a{
+    color: white;
+}
+.footerIcons ul a:hover{
+    color: var(--primaryColor);
+}
+.tweet i{
+    color: var(--primaryColor);
+}
+.tweet a{
+    text-decoration: none;
+    color: white;
+}
+.tweet a:hover{
+    color: var(--primaryColor);
+}
+
+
+.footerImgItem img{
+    width: 100%;
+}
+
+
+.signupText ,.contactusText{
+    font-size: smaller;
+}
+.contactnumber{
+    font-size:15px;
+    color: var(--primaryColor);
+}
+
+
+.copyright{
+    background-color: rgb(24, 24, 24);
+}
+.copyright a{
+    text-decoration: none;
+    color: rgb(37, 113, 119);
+}
+
+
+/* ************************************************************ */
+/* Side Menu */
+.sideMenu{
+    position: fixed;
+    right: 0px;
+    bottom: 37%;
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+    padding: 5px;
+}
+.sideMenu i{
+    color: white;
+    
+}
+
+
+/* ************************************************************ */
+/* Shopping Cart */
+.cart{
+    position: fixed;
+    right: 0px;
+    bottom: 30%;
+    box-shadow: 0 0 10px  lightgray;
+    background-color: white;
+    cursor: pointer;
+}
+.cart a{
+    color: white;
+}
+.cart i{
+    padding: 12px !important;
+    color: var(--secondaryColor);
+}
+
+
+/* ************************************************************ */
+/* Top Button */
+.topBtn{
+    position: fixed;
+    right: 8px;
+    bottom: 15px;
+    background-color: var(--primaryColor);
+}
+.topBtn a{
+    color: white;
+}
+.topBtn i{
+    padding: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px) and (max-width:1550px) {
+    .cakeDesign{
+        transform: translateY(50%);
+    }
+
+
+    
+}
+
