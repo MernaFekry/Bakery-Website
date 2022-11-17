@@ -308,7 +308,14 @@ ul{
 
 
 
+@media screen and (min-width:0px) and (max-width:600px) {
+    .specialtiesSubtitle h2{
+        font-size: 30px ;
+    }
 
+
+    
+}
 
 
 
